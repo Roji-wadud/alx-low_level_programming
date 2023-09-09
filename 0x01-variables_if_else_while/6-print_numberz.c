@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char singleDigitBaseTen;
+	int  singleDigitBaseTen;
 
 	for (singleDigitBaseTen = 0; singleDigitBaseTen < 10; singleDigitBaseTen++)
 	{
