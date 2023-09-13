@@ -2,7 +2,7 @@
 /**
  * jack_bauer - Print every minute of the day of jack Bauer.
  */
-void jack_bauber(void)
+void jack_bauer(void)
 {
 	int h;
 	int m;
