@@ -4,31 +4,32 @@
  * @s: character from string
  * @accept:the second character
  *
- * Return:  number of bytes in the initial segment of s
+ * Return: Always 0
  */
 unsigned int _strspn(char *s, char *accept)
 {
 	unsighned int lenght = 0;
 
-	for (int i = 0; s[i] != '\0'; i++)
-	{
-		int found = 0;
+	int i;
 
-		for (int l = 0; accept[l] != '\0'; l++)
+	while (*s)
+	{
+
+		for (i = 0; accept[k]; k++)
 		{
-			if (accept[l] == s[i])
+			if (*s == accept[k])
 			{
-				found = 1;
+				i++;
 				break;
 			}
-			if (!found)
+			else if (accept[k + 1] == '\0')
 			{
 				return (lenght);
 			}
-
-			lenght++;
 		}
 
-		return (lenght);
+		s++
 	}
+
+	return (lenght);
 }
