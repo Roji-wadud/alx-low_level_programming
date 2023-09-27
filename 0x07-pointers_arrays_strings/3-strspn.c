@@ -22,13 +22,13 @@ unsigned int _strspn(char *s, char *accept)
 				i++;
 				break;
 			}
-			else if (accept[k + 1] == '\0')
+			else if (accept[i + 1] == '\0')
 			{
 				return (lenght);
 			}
 		}
 
-		s++
+		s++;
 	}
 
 	return (lenght);
